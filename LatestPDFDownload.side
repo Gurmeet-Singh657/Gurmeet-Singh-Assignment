@@ -2,7 +2,7 @@
   "id": "06c80223-4e57-42be-b3a1-d09cdc4c344f",
   "version": "2.0",
   "name": "Latest Pdf Download",
-  "url": "https://home.iitd.ac.in/",
+  "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&ssid=7&smid=0",
   "tests": [{
     "id": "03288a51-3c3e-4359-9dff-605d503c3931",
     "name": "Download PDF",
@@ -112,6 +112,6 @@
     "timeout": 300,
     "tests": ["03288a51-3c3e-4359-9dff-605d503c3931"]
   }],
-  "urls": ["https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&ssid=7&smid=0", "https://www.gpo.gov/", "https://home.iitd.ac.in/"],
+  "urls": ["https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&ssid=7&smid=0"],
   "plugins": []
 }
