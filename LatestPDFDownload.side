@@ -1,0 +1,117 @@
+{
+  "id": "06c80223-4e57-42be-b3a1-d09cdc4c344f",
+  "version": "2.0",
+  "name": "Latest Pdf Download",
+  "url": "https://home.iitd.ac.in/",
+  "tests": [{
+    "id": "03288a51-3c3e-4359-9dff-605d503c3931",
+    "name": "Download PDF",
+    "commands": [{
+      "id": "6ba209d2-aafc-44e6-b32c-f6284ce138f6",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&ssid=7&smid=0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e76bff9f-23ee-4b9a-b0d9-3b1cdbc89669",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aab1c134-b36e-4ec3-993f-68fd7a95f25a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Centralization of certifications under Foreign Account Tax Compliance Act (FATCA) and Common Reporting Standard (CRS) at KYC Registration Agencies (KRAs)",
+      "targets": [
+        ["linkText=Centralization of certifications under Foreign Account Tax Compliance Act (FATCA) and Common Reporting Standard (CRS) at KYC Registration Agencies (KRAs)", "linkText"],
+        ["css=.odd:nth-child(1) .points", "css:finder"],
+        ["xpath=//a[contains(text(),'Centralization of certifications under Foreign Account Tax Compliance Act (FATCA) and Common Reporting Standard (CRS) at KYC Registration Agencies (KRAs)')]", "xpath:link"],
+        ["xpath=//table[@id='sample_1']/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.sebi.gov.in/legal/circulars/feb-2024/centralization-of-certifications-under-foreign-account-tax-compliance-act-fatca-and-common-reporting-standard-crs-at-kyc-registration-agencies-kras-_81583.html')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Centralization of certifications under Foreign Account Tax Compliance Act (FATCA) and Common Reporting Standard (CRS) at KYC Registration Agencies (KRAs)')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4695",
+      "windowTimeout": 2000
+    }, {
+      "id": "6b8bb1af-7c55-4f9b-a80e-73fbe9f18462",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "896d7c95-5b30-4a91-a5fd-3122b368396b",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4695}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7fd1c73f-694b-4dc9-9058-deef7e297205",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "853f8f45-176b-4164-91a0-1b70576036d8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18da8097-6531-46c2-b6af-c86008050714",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@id='download']",
+      "targets": [
+        ["id=download", "id"],
+        ["css=#download", "css:finder"],
+        ["xpath=//button[@id='download']", "xpath:attributes"],
+        ["xpath=//div[@id='toolbarViewerRight']/button[4]", "xpath:idRelative"],
+        ["xpath=//div[2]/button[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbc7e516-0548-4e5b-b465-20f4ea84b5d1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a80344c-4b6f-402c-8f26-127e57afdada",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f04a388-2e9a-468d-b7d6-dd66d04d5d40",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8c827ee3-bb74-4633-bd9b-8ee46367dd9a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["03288a51-3c3e-4359-9dff-605d503c3931"]
+  }],
+  "urls": ["https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&ssid=7&smid=0", "https://www.gpo.gov/", "https://home.iitd.ac.in/"],
+  "plugins": []
+}
